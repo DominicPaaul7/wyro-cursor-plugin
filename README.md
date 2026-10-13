@@ -28,6 +28,13 @@ Ask the agent: *"Check this backend with Wyro"*, or just change a route and let 
 
 To gate pull requests in CI as well, see [wyro.in/docs/ci](https://wyro.in/docs/ci).
 
+## Data handling
+
+- The check runs on your machine. Your code is read locally and is never uploaded.
+- The MCP server makes no network calls. `npx` downloads the pinned `wyro-check` package from npm the first time it runs.
+- **Opt-in central policy (only if you set `WYRO_TOKEN`).** When the command-line check runs with a Wyro token, it fetches that project's policy from `wyro.in` and records the run there: repository name, branch, commit SHA, route and table counts, error and warning counts, and the verdict. No source code is sent. Without a token, nothing leaves your machine.
+- Nothing is retained from Claude conversations. The plugin collects no personal data.
+
 ## Links
 
 - Website: [wyro.in](https://wyro.in)
