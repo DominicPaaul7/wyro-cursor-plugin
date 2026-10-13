@@ -1,0 +1,12 @@
+---
+description: Check backend architecture with Wyro after changing routes, handlers, middleware or schema
+alwaysApply: false
+globs: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.mjs", "**/*.py", "**/*.prisma", "**/*.sql", "**/*.cds"]
+---
+
+When you change a backend's routes, handlers, middleware or database schema, call the `wyro` MCP tool `check_backend` before you report the task as done.
+
+- Fix every NEW finding it returns, or tell the user why that finding is intended.
+- Never edit `.wyro/baseline.json` or `wyro.json` to make a finding go away. Accepting a finding as known debt is the user's decision.
+- Before changing an unfamiliar backend, call `describe_backend` to see its routes and the tables they reach.
+- When you show results, lead with Wyro's verdict card exactly as returned, then at most the top three findings with file and line, then offer to fix the first one.
