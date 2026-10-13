@@ -1,0 +1,17 @@
+{
+  "name": "wyro",
+  "owner": {
+    "name": "Wyro",
+    "url": "https://wyro.in"
+  },
+  "metadata": {
+    "description": "Wyro: the architecture check for backends agents write."
+  },
+  "plugins": [
+    {
+      "name": "wyro",
+      "source": "./",
+      "description": "Architecture check for backends agents write: routes that reach data without authenticating, validating or rate limiting."
+    }
+  ]
+}

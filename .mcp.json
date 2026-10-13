@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wyro": {
+      "command": "npx",
+      "args": ["-y", "wyro-check@latest", "--mcp"]
+    }
+  }
+}

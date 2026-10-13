@@ -1,0 +1,10 @@
+{
+  "name": "wyro",
+  "version": "0.1.0",
+  "description": "Architecture check for backends agents write: which routes reach which tables, and which do so without authenticating, validating or rate limiting. Deterministic, no model, runs locally.",
+  "author": { "name": "Wyro", "url": "https://wyro.in" },
+  "homepage": "https://wyro.in",
+  "repository": "https://github.com/DominicPaaul7/wyro-cursor-plugin",
+  "license": "MIT",
+  "keywords": ["architecture", "security", "backend", "authentication", "rate-limiting", "mcp", "express", "nextjs", "nestjs", "fastapi"]
+}

@@ -1,4 +1,4 @@
-# Wyro for Cursor
+# Wyro for Cursor and Claude Code
 
 The architecture check for backends agents write. Wyro reads your backend's source and tells Cursor's agent which routes reach which tables, and which do so without authenticating, validating input or rate limiting. It is deterministic (no model), so the same code always gets the same answer.
 
@@ -7,8 +7,16 @@ The architecture check for backends agents write. Wyro reads your backend's sour
 | Component | What it does |
 |---|---|
 | MCP server `wyro` | Runs `npx -y wyro-check@latest --mcp` locally. Tools: `check_backend`, `describe_backend`, `list_rules`. Prompts: `check`, `fix`, `map`, `ship`. |
-| Rule `wyro-check` | Tells the agent to run the check after changing routes, handlers, middleware or schema, and to fix new findings rather than silence them. |
-| Skill `wyro-check` | The check → fix → check-again loop, step by step. |
+| Rule `wyro-check` (Cursor) | Tells the agent to run the check after changing routes, handlers, middleware or schema, and to fix new findings rather than silence them. |
+| Skill `wyro-check` | Run the check and report the verdict and top findings. |
+| Skill `wyro-fix` | Fix findings most dangerous first, re-checking after each one. |
+
+## Install in Claude Code
+
+```
+/plugin marketplace add DominicPaaul7/wyro-cursor-plugin
+/plugin install wyro@wyro
+```
 
 ## Requirements
 
