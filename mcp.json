@@ -2,7 +2,7 @@
   "mcpServers": {
     "wyro": {
       "command": "npx",
-      "args": ["-y", "wyro-check@latest", "--mcp"]
+      "args": ["-y", "wyro-check@0.2.5", "--mcp"]
     }
   }
 }

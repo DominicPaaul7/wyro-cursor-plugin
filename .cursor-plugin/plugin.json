@@ -1,7 +1,7 @@
 {
   "name": "wyro",
   "description": "Architecture check for backends agents write: which routes reach which tables, and which do so without authenticating, validating or rate limiting. Deterministic, no model.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": { "name": "Wyro", "email": "dominicpaul2128@gmail.com" },
   "homepage": "https://wyro.in",
   "repository": "https://github.com/DominicPaaul7/wyro-cursor-plugin",
