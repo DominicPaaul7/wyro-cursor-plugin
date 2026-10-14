@@ -8,7 +8,7 @@ description: Fix what the Wyro architecture check found, most dangerous first, r
 1. Run the check from the backend's root:
 
    ```bash
-   npx -y wyro-check@0.2.5 . --no-interactive --json
+   npx -y wyro-check@0.2.6 . --no-interactive --json
    ```
 
 2. Take the most dangerous NEW finding (highest risk, highest confidence). Read the route's handler and the code around it before changing anything.

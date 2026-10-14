@@ -1,6 +1,6 @@
 {
   "name": "wyro",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Architecture check for backends agents write: which routes reach which tables, and which do so without authenticating, validating or rate limiting. Deterministic, no model, runs locally.",
   "author": { "name": "Wyro", "url": "https://wyro.in" },
   "homepage": "https://wyro.in",

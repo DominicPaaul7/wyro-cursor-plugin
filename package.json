@@ -1,10 +1,10 @@
 {
   "name": "wyro-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "description": "Launcher lock for the Wyro plugin's MCP server.",
   "license": "MIT",
   "dependencies": {
-    "wyro-check": "0.2.5"
+    "wyro-check": "0.2.6"
   }
 }
