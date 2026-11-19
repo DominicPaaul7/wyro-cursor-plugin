@@ -2,6 +2,12 @@
 
 The architecture check for backends agents write. Wyro reads your backend's source and tells Cursor's agent which routes reach which tables, and which do so without authenticating, validating input or rate limiting. It is deterministic (no model), so the same code always gets the same answer.
 
+Just the MCP server, without the plugin:
+
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en/install-mcp?name=wyro&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsInd5cm8tY2hlY2tAbGF0ZXN0IiwiLS1tY3AiXX0%3D) [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Wyro-0098FF?logo=visualstudiocode&logoColor=white)](https://insiders.vscode.dev/redirect/mcp/install?name=wyro&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22wyro-check%40latest%22%2C%22--mcp%22%5D%7D)
+
+It is also in the official MCP Registry as `io.github.WyroBase/wyro-check`.
+
 ## What's in the plugin
 
 | Component | What it does |
