@@ -12,7 +12,7 @@ It is also in the official MCP Registry as `io.github.WyroBase/wyro-check`.
 
 | Component | What it does |
 |---|---|
-| MCP server `wyro` | Runs `npx -y wyro-check@0.2.14 --mcp` locally. Tools: `check_backend`, `describe_backend`, `check_change`, `list_rules`. Prompts: `check`, `fix`, `map`, `impact`, `ship`. |
+| MCP server `wyro` | Runs `npx -y wyro-check@0.2.15 --mcp` locally. Tools: `check_backend`, `describe_backend`, `check_change`, `list_rules`. Prompts: `check`, `fix`, `map`, `impact`, `ship`. |
 | Rule `wyro-check` (Cursor) | Tells the agent to run the check after changing routes, handlers, middleware or schema, and to fix new findings rather than silence them. |
 | Skill `wyro-check` | Run the check and report the verdict and top findings. |
 | Skill `wyro-fix` | Fix findings most dangerous first, re-checking after each one. |
